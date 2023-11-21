@@ -13,6 +13,7 @@ RUN cd /tmp                                                                 && \
     make                                                                    && \
     make install PREFIX=/usr/local
 
+COPY ./git-crypt-key ./git-crypt-key
 COPY ./gitcrypt_unlock.sh ./gitcrypt_unlock.sh
 RUN chmod +x ./gitcrypt_unlock.sh
-ENTRYPOINT ["./gitcrypt_unlock.sh"]                                                              && \
+ENTRYPOINT ["./gitcrypt_unlock.sh"]                                                             && \
