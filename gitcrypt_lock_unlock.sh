@@ -1,6 +1,5 @@
 #!/bin/sh
 git init
-git-crypt init
 echo "The current working directory is: $(pwd)"
 git-crypt status
 echo -n "Enter "lock" or "unlock": "
