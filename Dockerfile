@@ -7,6 +7,6 @@ RUN cd /tmp                                                                 && \
     make                                                                    && \
     make install PREFIX=/usr/local
 
-COPY ./entrypoint.sh ./entrypoint.sh
-RUN chmod +x ./entrypoint.sh
-ENTRYPOINT ["./entrypoint.sh"]                                                              && \
+COPY ./gitcrypt_unlock.sh ./gitcrypt_unlock.sh
+RUN chmod +x ./gitcrypt_unlock.sh
+ENTRYPOINT ["./gitcrypt_unlock.sh"]                                                              && \
